@@ -4,45 +4,90 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>css基础</title>
-  <!-- 外部样式表 -->
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <style>
+    <!-- 外部样式表 -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <style>
     li.create-css {
-      color: blue;
+        color: blue;
     }
-  </style>
+    </style>
 </head>
 
 <body>
-  <h1>id 和 class 选择器</h1>
-  <h2>id 选择器</h2>
-  <p>id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 "#" 来定义。</p>
-  <h3>实例</h3>
-  <p id="para1">Hello World!</p>
-  <p>这个段落不受该样式的影响。</p>
+    <h1>id 和 class 选择器</h1>
+    <h2>id 选择器</h2>
+    <p>id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 "#" 来定义。</p>
+    <h3>实例</h3>
+    <p id="para1">Hello World!</p>
+    <p>这个段落不受该样式的影响。</p>
 
-  <h2>class 选择器</h2>
-  <p>class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一个点"."号显示</p>
-  <p class="center">Hello World!</p>
-  <p>这个段落不受该样式的影响。</p>
+    <h2>class 选择器</h2>
+    <p>class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一个点"."号显示</p>
+    <p class="center">Hello World!</p>
+    <p>这个段落不受该样式的影响。</p>
 
-  <h1>创建 css</h1>
-  <ul>
-    <li class="create-css">外部样式表</li>
-    <li class="create-css">内部样式表</li>
-    <li class="create-css" style="color:yellow;">内联样式</li>
-  </ul>
-  <p>通过上面的例子，我们可以看到样式的优先级为：（内联样式）Inline style > （内部样式）Internal style sheet >（外部样式）External style sheet > 浏览器默认样式</p>
+    <h1>创建 css</h1>
+    <ul>
+        <li class="create-css">外部样式表</li>
+        <li class="create-css">内部样式表</li>
+        <li class="create-css" style="color:yellow;">内联样式</li>
+    </ul>
+    <p>通过上面的例子，我们可以看到样式的优先级为：（内联样式）Inline style &gt; （内部样式）Internal style sheet &gt;（外部样式）External style sheet &gt; 浏览器默认样式</p>
 
-  <h1>常用属性</h1>
-  <h2>背景</h2>
-  <ul>
-    <li>background-color</li>
-    <li>background-image</li>
-    <li>background-repeat</li>
-    <li>background-attachment</li>
-    <li>background-position</li>
-  </ul>
+    <h1>常用属性</h1>
+    <h2>背景</h2>
+    <ul>
+        <li>background-color</li>
+        <li>background-image</li>
+        <li>background-repeat</li>
+        <li>background-attachment</li>
+        <li>background-position</li>
+    </ul>
+
+    <h1>文本</h1>
+    <h2>文本颜色</h2>
+    <div class="text-color">
+        <h1 class="text-color">这是标题 1</h1>
+        <p>这是一个普通的段落。请注意,本文是红色的。页面中定义默认的文本颜色选择器。</p>
+        <p class="ex">这是一个类为"ex"的段落。这个文本是蓝色的。</p>
+    </div>
+
+    <h2>文本的对齐方式</h2>
+    <div>
+        <h1 class="text-align">CSS text-align 实例</h1>
+        <p class="text-align date">2019 年 8 月 2 号</p>
+        <p class="text-align main">“当我年轻的时候，我梦想改变这个世界；当我成熟以后，我发现我不能够改变这个世界，我将目光缩短了些，决定只改变我的国家；当我进入暮年以后，我发现我不能够改变我们的国家，我的最后愿望仅仅是改变一下我的家庭，但是，这也不可能。当我现在躺在床上，行将就木时，我突然意识到：如果一开始我仅仅去改变我自己，然后，我可能改变我的家庭；在家人的帮助和鼓励下，我可能为国家做一些事情；然后，谁知道呢?我甚至可能改变这个世界。”</p>
+    </div>
+
+    <h2>文本修饰</h2>
+    <p>链接到: <a class="no-dec" href="/index.html">runoob.com</a></p>
+    <h3 class="text-overline">This is heading 1</h1>
+    <h3 class="text-line-through">This is heading 2</h2>
+    <h3 class="underline">This is heading 3</h3>
+
+    <h2>文本转换</h2>
+    <p class="uppercase">This is some text.</p>
+    <p class="lowercase">This is some text.</p>
+    <p class="capitalize">This is some text.</p>
+
+    <h2>文本缩进</h2>
+    <p class="indent">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+
+    <h1>字体</h1>
+    <p class="serif">这一段的字体是 Times New Roman </p>
+    <p class="sansserif">这一段的字体是 Arial.</p>
+
+    <p class="normal">这是一个段落,正常。</p>
+    <p class="italic">这是一个段落,斜体。</p>
+    <p class="oblique">这是一个段落,斜体。</p>
+
+    <h1 class="font-size-px">This is heading 1</h1>
+    <h2 class="font-size-px">This is heading 2</h2>
+    <p class="font-size-px">This is a paragraph.</p>
+
+    <h1 class="font-size-em">This is heading 1</h1>
+    <h2 class="font-size-em">This is heading 2</h2>
+    <p class="font-size-em">This is a paragraph.</p>
 </body>
 
 </html>
