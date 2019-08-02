@@ -1,34 +1,43 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="zh-cn">
 
 <head>
-  <!-- 可以添加在头部区域的元素标签为: 
+	<!-- 可以添加在头部区域的元素标签为: 
     <title>, <style>, <meta>, <link>, <script>, <noscript>, and <base>. -->
 
-  <!-- meta标签描述了一些基本的元数据。
+	<!-- meta标签描述了一些基本的元数据。
     <meta> 标签提供了元数据.元数据也不显示在页面上，但会被浏览器解析。
     META 元素通常用于指定网页的描述，关键词，文件的最后修改时间，作者，和其他元数据。
     元数据可以使用于浏览器（如何显示内容或重新加载页面），搜索引擎（关键词），或其他Web服务。
     <meta> 一般放置于 <head> 区域 -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <!-- title 是必须的 -->
+	<!-- title 是必须的 -->
 	<title>html常用标签</title>
-  <!-- <base> 标签描述了基本的链接地址/链接目标，该标签作为HTML文档中所有的链接标签的默认链接 -->
-  <base href="http://bloljx.coding.io/" target="_blank">
-  <!-- <link> 标签定义了文档与外部资源之间的关系。
+	<!-- <base> 标签描述了基本的链接地址/链接目标，该标签作为HTML文档中所有的链接标签的默认链接 -->
+	<base href="https://bloljx.coding.io/" target="_blank">
+	<!-- <link> 标签定义了文档与外部资源之间的关系。
     <link> 标签通常用于链接到样式表 -->
-  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
 
-  <!-- <style> 标签定义了HTML文档的样式文件引用地址.在<style> 元素中你也可以直接添加样式来渲染 HTML 文档 -->
-  <style type="text/css">
-    body {background-color:yellow}
-    p {color:blue}
-  </style>
+	<!-- <style> 标签定义了HTML文档的样式文件引用地址.在<style> 元素中你也可以直接添加样式来渲染 HTML 文档 -->
+	<style type="text/css">
+		thead {
+			color: green;
+		}
 
-  <!-- <script>标签用于加载脚本文件，如： JavaScript。 -->
-  <script>
-    alert("hello")
-  </script>
+		tbody {
+			color: blue;
+		}
+
+		tfoot {
+			color: red;
+		}
+	</style>
+
+	<!-- <script>标签用于加载脚本文件，如： JavaScript。 -->
+	<script>
+		alert("hello")
+	</script>
 </head>
 
 <body>
@@ -55,47 +64,178 @@
 	<h1>段落和水平线</h1>
 
 	<p>这是一个段落。</p>
-	<hr>
+	<hr />
 	<p>这是一个段落。</p>
-	<hr>
+	<hr />
 	<p>这是一个段落。</p>
 
 	<!-- 这是一个注释 -->
 
 	<h1>折行</h1>
-	<p>这个<br>段落<br>演示了分行的效果</p>
+	<p>这个<br />段落<br />演示了分行的效果</p>
 
-  <h1>文本格式</h1>
+    <h1>文本格式</h1>
 
-  <b>这个文本是加粗的</b>
-  <br />
+    <b>这个文本是加粗的</b>
+    <br />
 
-  <strong>这个文本是加粗的</strong>
-  <br />
+    <strong>这个文本是加粗的</strong>
+    <br />
 
-  <big>这个文本字体放大</big>
-  <br />
+    <big>这个文本字体放大</big>
+    <br />
 
-  <em>这个文本是斜体的</em>
-  <br />
+    <em>这个文本是斜体的</em>
+    <br />
 
-  <i>这个文本是斜体的</i>
-  <br />
+    <i>这个文本是斜体的</i>
+    <br />
 
-  <small>这个文本是缩小的</small>
-  <br />
+    <small>这个文本是缩小的</small>
+    <br />
 
-  这个文本包含
-  <sub>下标</sub>
-  <br />
+    这个文本包含<sub>下标</sub>
+    <br />
 
-  这个文本包含
-  <sup>上标</sup>
+    这个文本包含<sup>上标</sup>
 
-  <h1>链接</h1>
-  <a href="/hello_world.html" target="_blank">访问hello world</a>
-   请始终将正斜杠添加到子文件夹。假如这样书写链接：href="http://www.baidu.com"，就会向服务器产生两次  HTTP 请求。这是因为服务器会添加正斜杠到这个地址，然后创建一个新的请求，就像这样：href="http://www.baidu.com/"。
+    <h1>链接</h1>
+    <a href="/hello_world.html" target="_blank">访问hello world</a>
+    <p>请始终将正斜杠添加到子文件夹。假如这样书写链接：href="https://www.baidu.com"，就会向服务器产生两次  HTTP 请求。这是因为服务器会添加正斜杠到这个地址，然后创建一个新的请求，就像这样：href="https://www.baidu.com/"。</p>
 
+    <h1>图片</h1>
+    <img src="/imgs/star.png" alt="这是个星星图片" width="28" height="28"/>
+
+    <h1>表格</h1>
+    <!-- 定义表格 -->
+    <table border="1">
+        <!-- 定义标题 -->
+        <caption>zone</caption>
+        <!-- 定义列颜色 -->
+        <colgroup>
+            <col style="background-color:red">
+            <col span="2" style="background-color:yellow">
+        </colgroup>
+        <!-- 定义表头 -->
+        <thead>
+            <tr>
+                <!-- 表格的表头使用 <th> 标签进行定义 -->
+                <th>/</th>
+                <th>0</th>
+                <th>1</th>
+            </tr>
+        </thead>
+        <!-- 定义表体 -->
+        <tbody>
+            <!-- 定义行 -->
+            <tr>
+                <!-- 定义列 -->
+                <td>0</td>
+                <td>0, 0</td>
+                <td>0, 1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1, 0</td>
+                <td>1, 1</td>
+            </tr>
+        </tbody>
+        <!-- 定义表尾 -->
+        <tfoot>
+            <tr>
+                <td>/</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1>列表</h1>
+    <h2>无序列表</h2>
+    <ul>
+        <li>说</li>
+        <li>学</li>
+        <li>逗</li>
+        <li>唱</li>
+    </ul>
+
+    <h2>有序列表</h2>
+    <ol>
+        <li>望</li>
+        <li>闻</li>
+        <li>问</li>
+        <li>切</li>
+    </ol>
+    <h2>自定义列表</h2>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+
+    <h1>区块</h1>
+    <p>&nbsp;&nbsp;大多数 HTML 元素被定义为块级元素或内联元素。</p>
+    <p>&nbsp;&nbsp;块级元素在浏览器显示时，通常会以新行来开始（和结束）。实例: &lt;h1&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;table&gt;</p>
+    <p>&nbsp;&nbsp;内联元素在显示时通常不会以新行开始。实例: &lt;b&gt;, &lt;td&gt;, &lt;a&gt;, &lt;img&gt;</p>
+
+    <h2>&lt;div&gt;元素</h2>
+    <ul>
+        <li>块级元素，它可用于组合其他 HTML 元素的容器。</li>
+        <li>没有特定的含义。除此之外，由于它属于块级元素，浏览器会在其前后显示折行。</li>
+        <li>与 CSS 一同使用，&lt;div&gt; 元素可用于对大的内容块设置样式属性。</li>
+        <li>另一个常见的用途是文档布局</li>
+    </ul>
+    <h2>&lt;span&gt;元素</h2>
+    <ul>
+        <li>内联元素，可用作文本的容器</li>
+        <li>元素也没有特定的含义。</li>
+        <li>CSS 一同使用时，&lt;span&gt;元素可用于为部分文本设置样式属性。</li>
+    </ul>
+
+    <h1>表单</h1>
+    <p>表单用于收集不同类型的用户输入。</p>
+    <form>
+        <!-- 文本域 -->
+        username: <input type="text" name="username" />
+        <br />
+        <!-- 文本框 -->
+        <textarea rows="10" cols="30">我是一个文本框。</textarea>
+        <br />
+        <!-- 密码字段 -->
+        password: <input type="password" name="pwd" />
+        <br />
+        <!-- 单选按钮 -->
+        <input type="radio" name="sex" value="male" />Male
+        <br />
+        <input type="radio" name="sex" value="female" />Female
+        <br />
+        <!-- 复选按钮 -->
+        <input type="checkbox" name="vehicle" value="Bike" />I have a bike
+        <br />
+        <input type="checkbox" name="vehicle" value="Car" />I have a car
+        <br />
+        <!-- 下拉框 -->
+        <select name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab" selected>Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <!-- 按钮 -->
+        <input type="button" value="useless button" />
+        <!-- 重置按钮 -->
+        <input type="reset" value="reset" />
+        <!-- 提交按钮 -->
+        <input type="submit" value="Submit" />
+    </form>
+
+    <h1>iframe框架</h1>
+    <iframe src="/hello_world.html" width="200" height="200" frameborder="0"></iframe>
+    <br />
+    <!-- 在iframe打开a元素链接 -->
+    <iframe src="/hello_world.html" name="iframe_a"></iframe>
+    <p><a href="/" target="iframe_a">home page</a></p>
 </body>
 
 </html>
