@@ -1,0 +1,15 @@
+/* 这是个css注释， css的语法为selector {key:value; key2:value2;...keyn:valuen} */
+#para1 {
+  text-align: center;
+  color: red;
+}
+
+.center {
+  text-align: center;
+  color: red;
+}
+
+li.create-css {
+  font-size: 20;
+  color: red;
+}

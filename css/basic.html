@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>css基础</title>
+  <!-- 外部样式表 -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <style>
+    li.create-css {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>id 和 class 选择器</h1>
+  <h2>id 选择器</h2>
+  <p>id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 "#" 来定义。</p>
+  <h3>实例</h3>
+  <p id="para1">Hello World!</p>
+  <p>这个段落不受该样式的影响。</p>
+
+  <h2>class 选择器</h2>
+  <p>class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一个点"."号显示</p>
+  <p class="center">Hello World!</p>
+  <p>这个段落不受该样式的影响。</p>
+
+  <h1>创建 css</h1>
+  <ul>
+    <li class="create-css">外部样式表</li>
+    <li class="create-css">内部样式表</li>
+    <li class="create-css" style="color:yellow;">内联样式</li>
+  </ul>
+  <p>通过上面的例子，我们可以看到样式的优先级为：（内联样式）Inline style > （内部样式）Internal style sheet >（外部样式）External style sheet > 浏览器默认样式</p>
+
+  <h1>常用属性</h1>
+  <h2>背景</h2>
+  <ul>
+    <li>background-color</li>
+    <li>background-image</li>
+    <li>background-repeat</li>
+    <li>background-attachment</li>
+    <li>background-position</li>
+  </ul>
+</body>
+
+</html>
