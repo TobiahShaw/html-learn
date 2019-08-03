@@ -83,3 +83,8 @@ h2.font-size-em {
 p.font-size-em {
   font-size: 1.25em;
 }
+
+a.link:link {color:#000000;}      /* 未访问链接*/
+a.link:visited {color:#00FF00;}  /* 已访问链接 */
+a.link:hover {color:#FF00FF;}  /* 鼠标移动到链接上 */
+a.link:active {color:#0000FF;}  /* 鼠标点击时 */
