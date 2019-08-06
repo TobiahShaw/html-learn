@@ -186,3 +186,13 @@ p
 p.marked{
     text-decoration:underline;
 }
+
+h1.hidden {visibility:hidden;}
+
+h2.hidden {
+  display:none;
+}
+
+li.inline {
+  display: inline;
+}
