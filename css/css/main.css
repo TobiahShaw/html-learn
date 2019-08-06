@@ -163,3 +163,26 @@ p.multi
 	border-left-style:solid;
   border-color:red;
 }
+
+/* 分组选择器 */
+h1,h2,p
+{
+    color:green;
+}
+/* 嵌套选择器 */
+p
+{
+	color:blue;
+	text-align:center;
+}
+.marked
+{
+	background-color:red;
+}
+.marked p
+{
+	color:white;
+}
+p.marked{
+    text-decoration:underline;
+}
