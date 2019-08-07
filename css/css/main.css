@@ -205,3 +205,10 @@ li.inline {
     overflow: scroll;
     border: 1px solid #ccc;
 }
+
+.thumbnail {
+  float:left;
+	width:110px;
+	height:90px;
+	margin:5px;
+}
