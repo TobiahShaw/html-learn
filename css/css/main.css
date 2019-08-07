@@ -211,4 +211,15 @@ li.inline {
 	width:110px;
 	height:90px;
 	margin:5px;
+  clear: both;
+}
+/*后代选择器(以空格分隔)*/
+div p
+{
+	background-color:yellow;
+}
+/*子元素选择器(以大于号分隔）*/
+div>p
+{
+	background-color:yellow;
 }
