@@ -223,3 +223,15 @@ div>p
 {
 	background-color:yellow;
 }
+/*伪类*/
+a:link {color:#000000;}      /* 未访问链接*/
+a:visited {color:#00FF00;}  /* 已访问链接 */
+a:hover {color:#FF00FF;}  /* 鼠标移动到链接上 */
+a:active {color:#0000FF;}  /* 鼠标点击时 */
+
+/*伪元素*/
+p.pseudo:first-line 
+{
+  color:#ff0000;
+  font-variant:small-caps;
+}
