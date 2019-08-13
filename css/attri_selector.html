@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>属性选择器</title>
+</head>
+
+<body>
+  <h1>属性选择器</h1>
+  <h2>具有特定属性的HTML元素样式</h2>
+  <p>具有特定属性的HTML元素样式不仅仅是class和id。</p>
+  <p>下面的例子是把包含标题（title）的所有元素变为蓝色：</p>
+  <code>
+    [title]
+    {
+      color:blue;
+    }
+  </code>
+  <p>下面的实例改变了标题title='tobiah'元素的边框样式:</p>
+  <code>
+    [title=tobiah]
+    {
+      border:5px solid green;
+    }
+  </code>
+  <p>下面是包含指定值的title属性的元素样式的例子，使用（~）分隔属性和值:</p>
+  <code>
+    [title=~runoob]
+    {
+      color:blue;
+    }
+  </code>
+  <p>下面是包含指定值的lang属性的元素样式的例子，使用（|）分隔属性和值:</p>
+  <code>
+    [lang|=en] { color:blue; }
+  </code>
+</body>
+
+</html>
