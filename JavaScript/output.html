@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>js输出</title>
+  <script>
+    function display(){
+	    document.getElementById("demo").innerHTML="使用 innerHTML 写入到 HTML 元素。";
+    }
+    function log(){
+	    console.log('hello');
+    }
+  </script>
+</head>
+
+<body>
+
+	<h1>js输出方式</h1>
+	<ul>
+    <li>使用 window.alert() 弹出警告框。<button type="button" onclick="alert('hello')">弹出警告</button></li>
+    <li>使用 document.write() 方法将内容写到 HTML 文档中。<script>document.write("【这通过是write写道文档的】");</script></li>
+    <li><span id="demo"></span><button type="button" onclick="display()">写入元素</button></li>
+    <li>使用 console.log() 写入到浏览器的控制台。<button type="button" onclick="log()">写入log</button></li>
+  </ul>
+
+</body>
+
+</html>
