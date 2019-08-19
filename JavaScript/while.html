@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>while 循环</title>
+</head>
+
+<body>
+
+	<p>点击下面的按钮，只要 i 小于 5 就一直循环代码块。</p>
+	<button onclick="myFunction()">点击这里</button>
+<p id="demo"></p>
+<script>
+function myFunction(){
+	var x="",i=0;
+	while (i<5){
+		x=x + "该数字为 " + i + "<br>";
+		i++;
+	}
+	document.getElementById("demo").innerHTML=x;
+}
+</script>
+
+<p>点击下面的按钮，只要 i 小于 5 就一直循环代码块。该循环至少会执行一次，即使条件为 false 它也会执行一次，因为代码块会在条件被测试前执行</p>
+<button onclick="myFunction2()">点击这里</button>
+<p id="demo2"></p>
+<script>
+function myFunction2(){
+	var x="",i=0;
+	do{
+		x=x + "该数字为 " + i + "<br>";
+	  i++;
+	}
+	while (i<5)  
+	document.getElementById("demo2").innerHTML=x;
+}
+</script>
+
+</body>
+</html>
