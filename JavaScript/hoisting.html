@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>变量提升</title>
+</head>
+
+<body>
+
+	<p>JavaScript 中，函数及变量的声明都将被提升到函数的最顶部。<br/>JavaScript 中，变量可以在使用后声明，也就是变量可以先使用再声明。</p>
+
+	<p id="demo"></p>
+	<script>
+		x = 5; // 变量 x 设置为 5
+    elem = document.getElementById("demo"); // 查找元素 
+    elem.innerHTML = x;                     // 在元素中显示 x
+    var x; // 声明 x
+
+	</script>
+
+	<p>JavaScript 只有声明的变量会提升，初始化的不会。</p>
+	<p id="demo2"></p>
+	<script>
+		var x = 5; // 初始化 x
+    elem = document.getElementById("demo2"); // 查找元素 
+    elem.innerHTML = "x 为：" + x + "，y 为：" + y;           // 显示 x 和 y
+    var y = 7; // 初始化 y
+
+	</script>
+
+</body>
+
+</html>
