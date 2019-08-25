@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>NodeList</title>
+</head>
+<body>
+
+<h2>JavaScript HTML DOM!</h2>
+
+<p>Hello World!</p>
+
+<p>Hello Runoob!</p>
+
+<p>点击按钮修改所有 p 元素的背景颜色。</p>
+
+<button onclick="myFunction()">点我</button>
+
+<script>
+function myFunction() {
+    var myNodelist = document.querySelectorAll("p");
+    var i;
+    for (i = 0; i < myNodelist.length; i++) {
+        myNodelist[i].style.color = "red";
+    }
+}
+</script>
+
+<p>HTMLCollection 与 NodeList 的区别</p>
+
+<ul>
+  <li>HTMLCollection 是 HTML 元素的集合。NodeList 是一个文档节点的集合。</li>
+  <li>NodeList 与 HTMLCollection 都与数组对象有点类似，可以使用索引 (0, 1, 2, 3, 4, ...) 来获取元素</li>
+  <li>NodeList 与 HTMLCollection 都有 length 属性。</li>
+  <li>HTMLCollection 元素可以通过 name，id 或索引来获取。NodeList 只能通过索引来获取。</li>
+  <li>只有 NodeList 对象有包含属性节点和文本节点。</li>
+</ul>
+
+<p>节点列表不是一个数组！</p>
+<p>节点列表无法使用数组的方法： valueOf(), pop(), push(), 或 join() 。</p>
+
+</body>
+</html>
