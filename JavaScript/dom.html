@@ -25,5 +25,47 @@ function myThirdFunction() {
 }
 </script>
 
+<p>操作 HTML 元素 (节点) </p>
+
+<div id="div1">
+<p id="p1">这是一个段落。</p>
+<p id="p2">这是另外一个段落。</p>
+</div>
+ 
+<script>
+var para = document.createElement("p");
+var node = document.createTextNode("这是一个新的段落。(appendChild)");
+para.appendChild(node);
+ 
+var element = document.getElementById("div1");
+element.appendChild(para);
+</script>
+
+<script>
+var para = document.createElement("p");
+var node = document.createTextNode("这是一个新的段落。(insertBefore)");
+para.appendChild(node);
+ 
+var element = document.getElementById("div1");
+var child = document.getElementById("p1");
+element.insertBefore(para, child);
+</script>
+
+<script>
+var parent = document.getElementById("div1");
+var child = document.getElementById("p1");
+parent.removeChild(child);
+</script>
+
+<script>
+var para = document.createElement("p");
+var node = document.createTextNode("这是一个新的段落。(replaceChild)");
+para.appendChild(node);
+ 
+var parent = document.getElementById("div1");
+var child = document.getElementById("p2");
+parent.replaceChild(para, child);
+</script>
+
 </body>
 </html>
