@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>闭包</title>
+</head>
+<body>
+
+<p>局部变量计数。</p>
+<button type="button" onclick="myFunction()">计数!</button>
+<p id="demo">0</p>
+<script>
+function add() {
+    var counter = 0;
+    return counter += 1;
+}
+function myFunction(){
+    document.getElementById("demo").innerHTML = add();
+}
+</script>
+
+<p>局部变量计数。</p>
+<button type="button" onclick="myFunction1()">计数!</button>
+<p id="demo1">0</p>
+<script>
+var add1 = (function () {
+    var counter1 = 0;
+    return function () {return counter1 += 1;}
+})();
+function myFunction1(){
+    document.getElementById("demo1").innerHTML = add1();
+}
+</script>
+
+</body>
+</html>
